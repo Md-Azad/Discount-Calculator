@@ -9,6 +9,17 @@ document.getElementById('apply-btn').addEventListener('click',function(){
    const finalPrice = price-discount;
    const location = document.getElementById('total-price');
    const display = document.getElementById('dis');
-   location.innerText = finalPrice;
+//    fetch the coupon code
+    const couponCode = document.getElementById('coupon-code');
+    const code = couponCode.value;
+    
+   if(code ==='Disc30'){
+    location.innerText = finalPrice;
+
+   }
+   else{
+    location.innerText = price;
+   }
+   
    display.style.display='block';
 })

@@ -12,12 +12,18 @@
       <h1>Welcome to Discount Calculator</h1>
     </header>
     <main>
-      <section class="w-3/4 mx-auto flex gap-4 justify-center">
+      <section class="w-3/4 mx-auto flex gap-4 justify-center bg-amber-100">
         <div class="h-60 w-1/4 bg-amber-400">
           <img class="h-60 w-full" src="images/watch.jpg" alt="" />
         </div>
         <div class="my-auto">
           <h1>Regular Price: $<span id="original-price">1000</span></h1>
+          <input
+            id="coupon-code"
+            class="block border"
+            type="text"
+            placeholder="Coupon:Disc30"
+          />
           <button id="apply-btn" class="bg-sky-400 px-2 rounded mt-4">
             Apply Coupon
           </button>
